@@ -4,7 +4,8 @@ Created on Thu Jan 08 15:29:03 2015
 
 @author: Sarthak Khanna
 """
-
+import time
+start = time.time()
 
 b = [
  [75],
@@ -28,5 +29,10 @@ a = [[3],
      [7,4],
      [2,4,6],
      [8,5,9,3]] 
- 
 
+for i in range(3):
+    for j in range(0,i+1):
+        print i,j
+        print a[i][j]
+        k= max(a[i+1][j],a[i+1][j+1])
+end = time.time()-start
